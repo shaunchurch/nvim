@@ -16,7 +16,7 @@ null_ls.setup({
 		--    null_ls.builtins.code_actions.refactoring,
 		null_ls.builtins.completion.luasnip,
 		null_ls.builtins.diagnostics.alex,
-		null_ls.builtins.diagnostics.ansiblelint,
+--		null_ls.builtins.diagnostics.ansiblelint,
 	},
 	on_attach = function(client)
 		if client.server_capabilities.documentFormattingProvider then

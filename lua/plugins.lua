@@ -10,7 +10,6 @@ vim.cmd([[colorscheme tokyonight ]])
 packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 	use("projekt0n/github-nvim-theme")
-	--  use("arcticicestudio/nord-vim")
 	use("folke/tokyonight.nvim")
 	use({
 		"nvim-lualine/lualine.nvim", -- main pane footer prompt
@@ -44,10 +43,6 @@ packer.startup(function(use)
 	use("windwp/nvim-autopairs")
 	use("windwp/nvim-ts-autotag")
 	use("norcalli/nvim-colorizer.lua")
-	--  use({
-	--    "iamcco/markdown-preview.nvim",
-	--    run = function() vim.fn["mkdp#util#install"]() end,
-	--  })
 	use("akinsho/nvim-bufferline.lua")
 	use({
 		"folke/trouble.nvim",
@@ -64,4 +59,10 @@ packer.startup(function(use)
 	})
 	use("p00f/nvim-ts-rainbow")
 	use("tpope/vim-fugitive")
+	use({
+		"numToStr/Comment.nvim",
+		config = function()
+			require("Comment").setup()
+		end,
+	})
 end)
