@@ -4,7 +4,7 @@ if not null_ls_status_ok then
 end
 
 null_ls.setup({
-	debug = true,
+	debug = false,
 	sources = {
 		null_ls.builtins.formatting.stylua,
 		-- null_ls.builtins.diagnostics.eslint,

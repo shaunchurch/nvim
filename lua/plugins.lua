@@ -5,18 +5,15 @@ if not status then
 end
 
 vim.cmd([[packadd packer.nvim]])
-vim.cmd([[colorscheme tokyonight]])
+vim.cmd([[colorscheme tokyonight ]])
 
 packer.startup(function(use)
 	use("wbthomason/packer.nvim")
-	--	use({
-	--		"projekt0n/github-nvim-theme",
-	--	})
+	use("projekt0n/github-nvim-theme")
 	--  use("arcticicestudio/nord-vim")
-
 	use("folke/tokyonight.nvim")
 	use({
-		"nvim-lualine/lualine.nvim",
+		"nvim-lualine/lualine.nvim", -- main pane footer prompt
 		requires = { "kyazdani42/nvim-web-devicons", opt = true },
 	})
 	use("nvim-lua/plenary.nvim") -- Common utilities

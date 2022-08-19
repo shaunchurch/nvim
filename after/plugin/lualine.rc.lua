@@ -10,9 +10,9 @@ custom_theme.normal.c.bg = "#000000"
 
 lualine.setup({
 	-- options = { theme = "github_dark_default" },
-	--options = { theme = "ayu_dark" },
-	options = { theme = "tokyotonight" },
-	--	options = { theme = custom_theme },
+	-- options = { theme = "ayu_dark" },
+	-- options = { theme = "tokyonight" },
+	options = { theme = custom_theme },
 	sections = {
 		--lualine_a = {},  -- vim status mode
 		--lualine_b = {}, -- actually git info
@@ -22,3 +22,4 @@ lualine.setup({
 		lualine_x = {},
 	},
 })
+

@@ -12,3 +12,5 @@ vim.cmd([[ highlight NormalNC ctermbg=NONE guibg=NONE ]])
 vim.cmd([[ highlight VertSplit ctermbg=NONE guibg=NONE ctermfg=NONE cterm=NONE ]])
 vim.cmd([[ highlight NonText ctermbg=NONE guibg=NONE ctermfg=NONE cterm=NONE ]])
 vim.cmd([[ highlight StatusLine ctermbg=NONE guibg=NONE ctermfg=NONE cterm=NONE ]])
+-- transparent git gutter status column
+vim.cmd([[ highlight SignColumn ctermbg=NONE guibg=NONE ctermfg=NONE cterm=NONE ]])

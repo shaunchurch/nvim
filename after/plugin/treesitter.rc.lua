@@ -17,6 +17,7 @@ ts.setup({
 		"toml",
 		"fish",
 		"php",
+    "javascript",
 		"json",
 		"yaml",
 		"swift",
