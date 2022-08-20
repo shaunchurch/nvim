@@ -65,4 +65,17 @@ packer.startup(function(use)
 			require("Comment").setup()
 		end,
 	})
+	use({
+		"nvim-treesitter/nvim-treesitter-context",
+	})
+	use({
+		"folke/zen-mode.nvim",
+		config = function()
+			require("zen-mode").setup({
+				window = {
+					backdrop = 1.00,
+				},
+			})
+		end,
+	})
 end)
