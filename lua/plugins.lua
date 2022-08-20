@@ -9,7 +9,7 @@ vim.cmd([[colorscheme tokyonight ]])
 
 packer.startup(function(use)
 	use("wbthomason/packer.nvim")
-	use("projekt0n/github-nvim-theme")
+  	use("projekt0n/github-nvim-theme")
 	use("folke/tokyonight.nvim")
 	use({
 		"nvim-lualine/lualine.nvim", -- main pane footer prompt
