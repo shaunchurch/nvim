@@ -18,6 +18,7 @@ ts.setup({
 		"fish",
 		"php",
 		"javascript",
+    "typescript",
 		"json",
 		"yaml",
 		"swift",

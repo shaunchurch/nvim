@@ -26,3 +26,15 @@ vim.cmd([[ highlight DiagnosticVirtualTextHint guifg=#305049 guibg=NONE ]])
 -- DiagnosticVirtualTextWarn xxx guifg=#e0af68 guibg=#373640
 -- DiagnosticVirtualTextInfo xxx guifg=#0db9d7 guibg=#22374B
 -- DiagnosticVirtualTextHint xxx guifg=#1abc9c guibg=#233745
+--
+-- telescope windows
+vim.cmd([[ highlight TelescopeNormal guibg=NONE ]])
+vim.cmd([[ highlight TelescopeBorder guibg=NONE guifg=#233745 ]])
+
+-- indented lines
+vim.cmd([[highlight IndentBlanklineIndent1 guifg=#222222 gui=nocombine]])
+vim.cmd([[highlight IndentBlanklineContextChar guifg=#444444 gui=nocombine]])
+
+-- nvim tree sidebar bg
+vim.cmd([[ highlight NvimTreeNormal guifg=NONE guibg=NONE ]])
+vim.cmd([[ highlight NvimTreeNormalNC guifg=NONE guibg=NONE ]])

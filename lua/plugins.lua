@@ -9,7 +9,7 @@ vim.cmd([[colorscheme tokyonight ]])
 
 packer.startup(function(use)
 	use("wbthomason/packer.nvim")
-  	use("projekt0n/github-nvim-theme")
+	use("projekt0n/github-nvim-theme")
 	use("folke/tokyonight.nvim")
 	use({
 		"nvim-lualine/lualine.nvim", -- main pane footer prompt
@@ -47,9 +47,6 @@ packer.startup(function(use)
 	use({
 		"folke/trouble.nvim",
 		requires = "kyazdani42/nvim-web-devicons",
-		config = function()
-			require("trouble").setup({})
-		end,
 	})
 	use({
 		"lewis6991/gitsigns.nvim",
@@ -101,4 +98,5 @@ packer.startup(function(use)
 			vim.keymap.set("n", "<C-Space>", nvim_tmux_nav.NvimTmuxNavigateNext)
 		end,
 	})
+	use("lukas-reineke/indent-blankline.nvim")
 end)
