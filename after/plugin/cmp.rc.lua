@@ -34,10 +34,18 @@ cmp.setup({
 		{ name = "luasnip", keyword_length = 2 },
 	}),
 	formatting = {
-		format = lspkind.cmp_format({ with_text = false, maxwidth = 50 }),
-		fields = { "menu", "abbr", "kind" },
+		format = lspkind.cmp_format({ with_text = true, maxwidth = 400 }),
+		-- format = function(_, vim_item)
+		--   local icons = require("nvchad_ui.icons").lspkind
+		--   vim_item.kind = string.format("%s %s", icons[vim_item.kind], vim_item.kind)
+		--   return vim_item
+		-- end,
+		-- fields = { "menu", "abbr", "kind" },
 	},
 })
+
+-- Luasnip snippets
+require("luasnip.loaders.from_vscode").lazy_load()
 
 vim.cmd([[
   set completeopt=menuone,noinsert,noselect

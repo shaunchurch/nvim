@@ -5,8 +5,7 @@ end
 
 -- we need to use black to get transparency, apparently.
 notify.setup({
-  background_color = "#000000"
+	background_color = "#000000",
 })
 
 vim.notify = notify
-
