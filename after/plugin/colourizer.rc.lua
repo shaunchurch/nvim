@@ -29,7 +29,7 @@ vim.cmd([[ highlight DiagnosticVirtualTextHint guifg=#305049 guibg=NONE ]])
 --
 -- telescope windows
 vim.cmd([[ highlight TelescopeNormal guibg=NONE ]])
-vim.cmd([[ highlight TelescopeBorder guibg=NONE guifg=#233745 ]])
+vim.cmd([[ highlight TelescopeBorder guibg=NONE guifg=#494e61 ]])
 
 -- indented lines
 vim.cmd([[highlight IndentBlanklineIndent1 guifg=#222222 gui=nocombine]])
@@ -38,3 +38,10 @@ vim.cmd([[highlight IndentBlanklineContextChar guifg=#444444 gui=nocombine]])
 -- nvim tree sidebar bg
 vim.cmd([[ highlight NvimTreeNormal guifg=NONE guibg=NONE ]])
 vim.cmd([[ highlight NvimTreeNormalNC guifg=NONE guibg=NONE ]])
+
+-- OVERRIDE: this takes over ALL "strings" which were ugly in the theme
+-- vim.cmd([[ highlight String guifg=#fed7aa ]])
+-- vim.cmd([[ highlight String guifg=#93c5fd ]])
+-- vim.cmd([[ highlight String guifg=#f5d0fe ]])
+vim.cmd([[ highlight String guifg=#d59abc ]])
+-- vim.cmd([[ highlight String guifg=#bcb88f]])

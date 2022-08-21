@@ -12,8 +12,7 @@ lualine.setup({
 	-- options = { theme = "github_dark_default" },
 	-- options = { theme = "ayu_dark" },
 	-- options = { theme = "tokyonight" },
-	options = { theme = custom_theme, disabled_filetypes = { 'packer', 'NvimTree', 'NvimTree_1'  }
-
+	options = { theme = custom_theme, disabled_filetypes = { "packer", "NvimTree", "NvimTree_1", "Trouble" }
  },
 	sections = {
 		--lualine_a = {},  -- vim status mode
@@ -24,4 +23,3 @@ lualine.setup({
 		lualine_x = {},
 	},
 })
-

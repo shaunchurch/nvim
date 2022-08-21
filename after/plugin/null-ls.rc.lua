@@ -17,18 +17,18 @@ null_ls.setup({
 		--    null_ls.builtins.code_actions.refactoring,
 		null_ls.builtins.completion.luasnip,
 		null_ls.builtins.diagnostics.alex,
---		null_ls.builtins.diagnostics.ansiblelint,
+		--		null_ls.builtins.diagnostics.ansiblelint,
 	},
-	on_attach = function(client)
-		if client.server_capabilities.documentFormattingProvider then
-			vim.cmd("nnoremap <silent><buffer> <Leader>f :lua vim.lsp.buf.formatting()<CR>")
-
-			-- format on save
-			vim.cmd("autocmd BufWritePost <buffer> lua vim.lsp.buf.formatting()")
-		end
-
-		if client.server_capabilities.documentRangeFormattingProvider then
-			vim.cmd("xnoremap <silent><buffer> <Leader>f :lua vim.lsp.buf.range_formatting({})<CR>")
-		end
-	end,
+	-- on_attach = function(client)
+	-- 	if client.server_capabilities.documentFormattingProvider then
+	-- 		vim.cmd("nnoremap <silent><buffer> <Leader>f :lua vim.lsp.buf.formatting()<CR>")
+	--
+	-- 		-- format on save
+	-- 		vim.cmd("autocmd BufWritePost <buffer> lua vim.lsp.buf.formatting()")
+	-- 	end
+	--
+	-- 	if client.server_capabilities.documentRangeFormattingProvider then
+	-- 		vim.cmd("xnoremap <silent><buffer> <Leader>f :lua vim.lsp.buf.range_formatting({})<CR>")
+	-- 	end
+	-- end,
 })
