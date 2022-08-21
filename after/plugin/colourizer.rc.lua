@@ -7,6 +7,8 @@ colorizer.setup({
 	"*",
 })
 
+-- Many random color manipulations
+-- get me my transparent background at all costs
 vim.cmd([[ highlight Normal ctermbg=NONE guibg=NONE ]])
 vim.cmd([[ highlight NormalNC ctermbg=NONE guibg=NONE ]])
 vim.cmd([[ highlight VertSplit ctermbg=NONE guibg=NONE ctermfg=NONE cterm=NONE ]])
@@ -16,7 +18,6 @@ vim.cmd([[ highlight StatusLine ctermbg=NONE guibg=NONE ctermfg=NONE cterm=NONE 
 vim.cmd([[ highlight SignColumn ctermbg=NONE guibg=NONE ctermfg=NONE cterm=NONE ]])
 
 -- sort out overly dominant lint and error visual_text
-
 vim.cmd([[ highlight DiagnosticVirtualTextError guifg=#503030 guibg=NONE ]])
 vim.cmd([[ highlight DiagnosticVirtualTextWarn guifg=#504330 guibg=NONE ]])
 vim.cmd([[ highlight DiagnosticVirtualTextInfo guifg=#304b50 guibg=NONE ]])

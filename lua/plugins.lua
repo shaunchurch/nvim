@@ -31,7 +31,6 @@ packer.startup(function(use)
 	use("hrsh7th/cmp-nvim-lsp") -- nvim-cmp source for neovim's built-in LSP
 	use("hrsh7th/nvim-cmp") -- Completion
 	use("neovim/nvim-lspconfig") -- LSP
-	use("jose-elias-alvarez/null-ls.nvim")
 	use("williamboman/mason.nvim")
 	use("williamboman/mason-lspconfig.nvim")
 	use({ "glepnir/lspsaga.nvim", branch = "main" }) -- LSP UIs
@@ -39,13 +38,6 @@ packer.startup(function(use)
 	use({
 		"nvim-treesitter/nvim-treesitter",
 		run = ":TSUpdate",
-	})
-	use({
-		"kyazdani42/nvim-tree.lua",
-		requires = {
-			"kyazdani42/nvim-web-devicons", -- optional, for file icons
-		},
-		tag = "nightly", -- optional, updated every week. (see issue #1193)
 	})
 	use("kyazdani42/nvim-web-devicons") -- File icons
 	use("nvim-telescope/telescope.nvim")
@@ -109,4 +101,13 @@ packer.startup(function(use)
 		end,
 	})
 	use("lukas-reineke/indent-blankline.nvim")
+	use("rcarriga/nvim-notify")
+	use("jose-elias-alvarez/null-ls.nvim")
+	use({
+		"kyazdani42/nvim-tree.lua",
+		requires = {
+			"kyazdani42/nvim-web-devicons", -- optional, for file icons
+		},
+		tag = "nightly", -- optional, updated every week. (see issue #1193)
+	})
 end)

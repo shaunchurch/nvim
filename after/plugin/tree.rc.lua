@@ -7,6 +7,7 @@ require("nvim-tree").setup({
 	open_on_tab = false,
 	ignore_buffer_on_setup = true,
 	respect_buf_cwd = true,
+  hijack_unnamed_buffer_when_opening = false,
 	view = {
 		adaptive_size = true,
 		hide_root_folder = true,
@@ -34,4 +35,4 @@ require("nvim-tree").setup({
 	},
 })
 
-require("nvim-tree").toggle(false, true)
+require("nvim-tree").toggle(false, false)
