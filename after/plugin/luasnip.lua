@@ -4,9 +4,17 @@
 --
 local ls = require("luasnip")
 local types = require("luasnip.util.types")
+local snip = ls.snippet;
+local node = ls.snippet_node
+local text = ls.text_node
+local insert = ls.insert_node
+local func = ls.function_node
+local choice = ls.choice_node
+local dynamicn = ls.dynamic_node
 
-ls.config.set_config({
-	history = true,
+-- ls.config.set_config({
+ls.setup({
+	history = false,
 	updatevents = "TextChanged,TextChangedI",
 	enable_autosnippets = true,
 	ext_opts = {
@@ -39,6 +47,23 @@ end, { silent = true })
 
 vim.keymap.set("n", "<leader>'s", "<cmd>source ~/.config/nvim/after/plugin/luasnip.lua<CR>")
 
+-- ls.snippets = {
+-- 	all = {
+-- 		ls.parser.parse_snippet("somethin", "-- this was expanded!"),
+-- 	},
+-- 	lua = {
+-- 		-- lua specific
+-- 	},
+-- }
+-- ls.add_snippets(nil, {
+-- 	all = {
+-- 		snip({
+-- 			trig = "date",
+-- 			namr = "Date",
+-- 			dscr = "Date in the form of YYYY-MM-DD",
+-- 		}, {
+-- 			func(date, {}),
+-- 		}),
+-- 	},
+-- })
 
-
-print("Loaded snippets.")
